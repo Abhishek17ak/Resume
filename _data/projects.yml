@@ -1,0 +1,21 @@
+# Projects
+# uncomment the urls if you wish to display them, and add your own URL
+
+# jazznotes.io
+- project: Driver Safex - Driver Drowsiness Detection System
+  duration: Sep, 2022 &mdash; Dec, 2022
+  # url: "#"
+  description: I designed and developed a machine learning model that was seamlessly integrated into an Android application, incorporating advanced computer vision techniques. The application utilizes Google APIs and computer vision to continuously monitor the driver's eyes in real-time, detecting signs of drowsiness. Through this innovative system, I implemented a proactive alert mechanism that triggers an alarm to immediately alert the driver. Simultaneously, the application shares the driver's location with three designated emergency contacts. This multifaceted approach enhances overall road safety and promotes increased awareness among drivers.
+
+# Springfield Community Outreach Group
+- project: ShareBite - Food Donation App
+  #role: Co-Founder & Organizer
+  duration: Oct, 2021 &mdash; Feb, 2022
+  # url: "#"
+  description: I spearheaded the development of an Android application characterized by an intuitive and user-friendly interface. The application aimed to empower users to contribute to their communities by facilitating the seamless donation of excess food. Simultaneously, those in need could easily locate available food donations through an integrated map feature, leveraging the capabilities of the Google Maps API. To ensure secure data storage and efficient coordination between food donors and recipients, I implemented Firebase as the backend infrastructure. This strategic use of technology not only facilitated the seamless functioning of the application but also contributed to promoting food sustainability and fostering a sense of community support.
+
+- project: Signz - Sign Language Detector
+  #role: Co-Founder & Organizer
+  duration: Aug, 2022
+  # url: "#"
+  description: Developed an innovative application utilizing machine learning and computer vision libraries to recognize sign language gestures in real-time video feeds. Translated detected sign language into English, making communication more accessible and inclusive for individuals with hearing impairments.
