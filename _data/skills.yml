@@ -1,12 +1,14 @@
 # Skills
 # Organizational leadership
-- skill: Organizational leadership
-  description: I have several years of experience leading organziations from community groups to business departments. From public speaking, to mentoring, to coordination of people and events, I can lead in any context.
+- skill: Programming Languages
+  description: Python, Java, C/ C++, HTML/CSS, C Sharp, R, SQL
 
 # Communications strategy
-- skill: Communications strategy
-  description: Content and marketing strategy,
-
+- skill: Development Tools and Environments
+  description: Jupyter Notebook, Google Colab, VS Code, Git, PyCharm, IntelliJ, Power BI, Tabeleau, Microsoft Office Suite (Excel, Word, PowerPoint)
 # Digital content development and creation
-- skill: Digital content development and creation
-  description: Copy writing, graphic design, web design, front-end web development, print design
+- skill: Frameworks and Libraries
+  description: TensorFlow, SciPy, Matplotlib, Pandas, Scikit-learn, Seaborn, Keras, MongoDB (NoSQL)
+
+- skill: Language Proficiency
+  description: English - Fluent ; Hindi - Fluent ; Marathi -  Fluent ; Spanish - Beginner
