@@ -4,33 +4,33 @@
 # jazznotes.io
 - project: University Rankings Analysis
   duration: Oct, 2023 &mdash; Dec, 2023
-  url: "https://github.com/Abhishek17ak/My_Projects/tree/main/Unveiling%20the%20Complex%20Tapestry%20of%20University%20Rankings%20A%20Multidimensional%20Comparative%20Analysis%20and%20Modeling%20Approach"
+  # url: "https://github.com/Abhishek17ak/My_Projects/tree/main/Unveiling%20the%20Complex%20Tapestry%20of%20University%20Rankings%20A%20Multidimensional%20Comparative%20Analysis%20and%20Modeling%20Approach"
   description: I spearheaded a pioneering research initiative aimed at understanding and analyzing university rankings on a global scale. Through a meticulous comparative analysis of over 800 institutions, leveraging datasets from 4icu.org, WalletHub, and Forbes, I achieved a significant 10% reduction in mean squared error (MSE) by implementing precise data preprocessing techniques and introducing groundbreaking features. The project delved into the intricate dynamics of university rankings, employing sophisticated regression and neural network models. Notably, our models demonstrated exceptional performance, yielding an impressive MSE score of 13.29 on the test set after 350 training epochs, thereby advancing our understanding of the multifaceted factors driving institutional success. Throughout this endeavor, I collaborated closely with a diverse team of researchers, statisticians, and subject matter experts, fostering a collaborative and inclusive environment that promoted data-driven decision-making and innovation.
 
 - project: Algorithmic Trading Model
   duration: Sep, 2023 &mdash; Oct, 2023
-  url: "https://github.com/Abhishek17ak/My_Projects/tree/main/Algorithmic%20Trading%20Model%20Development"
+  #url: "https://github.com/Abhishek17ak/My_Projects/tree/main/Algorithmic%20Trading%20Model%20Development"
   description:I led the development and implementation of cutting-edge trading strategies by integrating quantitative and machine learning techniques. Through meticulous statistical analysis and strategic feature engineering, I achieved a substantial 30% improvement in prediction accuracy and reduced the mean absolute error to 0.03. Simultaneously, I spearheaded and executed exploratory data analysis, autocorrelation analysis, clustering, and network analysis, leveraging advanced techniques to extract valuable insights into market dynamics. Proficiently handling financial data, I implemented robust strategies for algorithmic trading, showcasing a comprehensive skill set in quantitative analysis and strategic decision-making within the dynamic realm of financial markets.
 
 - project: SpaceX Falcon 9 Prediction
   duration: May, 2022 &mdash; June, 2022
-  url: "https://github.com/Abhishek17ak/My_Projects/tree/main/SpaceX%20Falcon%209%20first%20stage%20Landing%20Prediction"
+  #url: "https://github.com/Abhishek17ak/My_Projects/tree/main/SpaceX%20Falcon%209%20first%20stage%20Landing%20Prediction"
   description: I orchestrated a data science initiative focused on predicting the success of SpaceX Falcon 9 first stage landings, undertaking extensive exploratory data analysis to extract crucial insights into launch factors. Developing and optimizing a robust predictive model utilizing Logistic Regression, Support Vector Machine, and Decision Tree algorithms, I achieved an impressive prediction rate of 96%. Additionally, through advanced feature engineering techniques, I improved the model's success rate by 20%, facilitating data-driven decision-making in the realm of rocket launches. This initiative reflects my proficiency in data science, predictive modeling, and contributing to informed decision-making processes in aerospace technology.
 
 - project: Exploring Academic Artistry Unveiling Insights into Student-Written Summaries with Data Science
   duration: Sep, 2023 &mdash; Oct, 2023
-  url: "https://github.com/Abhishek17ak/My_Projects/tree/main/Exploring%20Academic%20Artistry%20Unveiling%20Insights%20into%20Student-Written%20Summaries%20with%20Data%20Science"
+ # url: "https://github.com/Abhishek17ak/My_Projects/tree/main/Exploring%20Academic%20Artistry%20Unveiling%20Insights%20into%20Student-Written%20Summaries%20with%20Data%20Science"
   description: This data science project aims to analyze and explore the CommonLit Challenge dataset, focusing on evaluating the quality of written summaries produced by grade school children. The provided code begins with the installation of necessary packages and data loading from two CSV files. The subsequent sections involve feature engineering, exploring data distributions, identifying over-represented and under-represented words, and creating insightful visualizations. The baseline models, implemented with linear regression, are then assessed for content and wording scores. The project progresses to feature cleaning and normalization, followed by the creation of two additional models using linear regression and a different algorithm (Random Forest). The performance of these models is compared, providing insights into their effectiveness. Overall, this project combines exploratory data analysis, feature engineering, and machine learning to gain insights into the factors influencing the quality of student-written summaries in the CommonLit Challenge dataset.
 - project: Driver Safex - Driver Drowsiness Detection System
   duration: Sep, 2022 &mdash; Dec, 2022
-  url: "https://github.com/Abhishek17ak/My_Projects/tree/main/Driver%20Safex%20-%20Driver%20Drowsiness%20Detection%20System"
+  #url: "https://github.com/Abhishek17ak/My_Projects/tree/main/Driver%20Safex%20-%20Driver%20Drowsiness%20Detection%20System"
   description: I designed and developed a machine learning model that was seamlessly integrated into an Android application, incorporating advanced computer vision techniques. The application utilizes Google APIs and computer vision to continuously monitor the driver's eyes in real-time, detecting signs of drowsiness. Through this innovative system, I implemented a proactive alert mechanism that triggers an alarm to immediately alert the driver. Simultaneously, the application shares the driver's location with three designated emergency contacts. This multifaceted approach enhances overall road safety and promotes increased awareness among drivers.
 
 # Springfield Community Outreach Group
 - project: ShareBite - Food Donation App
   #role: Co-Founder & Organizer
   duration: Oct, 2021 &mdash; Feb, 2022
-  url: "https://github.com/Abhishek17ak/My_Projects/tree/main/ShareBite%20-%20Food%20Donation%20App"
+  #url: "https://github.com/Abhishek17ak/My_Projects/tree/main/ShareBite%20-%20Food%20Donation%20App"
   description: I spearheaded the development of an Android application characterized by an intuitive and user-friendly interface. The application aimed to empower users to contribute to their communities by facilitating the seamless donation of excess food. Simultaneously, those in need could easily locate available food donations through an integrated map feature, leveraging the capabilities of the Google Maps API. To ensure secure data storage and efficient coordination between food donors and recipients, I implemented Firebase as the backend infrastructure. This strategic use of technology not only facilitated the seamless functioning of the application but also contributed to promoting food sustainability and fostering a sense of community support.
 
 - project: Signz - Sign Language Detector
