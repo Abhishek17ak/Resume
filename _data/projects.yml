@@ -2,6 +2,23 @@
 # uncomment the urls if you wish to display them, and add your own URL
 
 # jazznotes.io
+
+- project: Development and Training of a Bidirectional LSTM Model for Automated Fake News Detection
+  duration: May, 2022 – June, 2022
+  url: "https://github.com/Abhishek17ak/My_Projects/tree/main/Fake%20News%20Detection"
+  description: This project aimed to tackle the pressing issue of misinformation through the development of a Bidirectional Long Short-Term Memory (LSTM) model, designed to automatically detect fake news with high accuracy. Leveraging the power of advanced natural language processing techniques, the model was trained to understand both the context and the semantics of news articles, enhancing its ability to distinguish between true and false information effectively. The use of bidirectional processing allowed the model to analyze text from both past and future contexts within the data sequence, providing a more comprehensive understanding of the content. Key technologies used included Python, TensorFlow, and Keras, with a focus on optimizing the LSTM architecture for superior performance in real-world scenarios.
+
+- project: Advanced Credit Risk Prediction Model
+  duration: Jan 2024 – Feb 2024
+  url: "https://github.com/Abhishek17ak/My_Projects/tree/main"
+  description: The Advanced Credit Risk Prediction Model project aimed to refine and enhance the accuracy of credit risk assessments using modern data analysis techniques in Python, with libraries such as Scikit-learn and XGBoost. By implementing logistic regression and gradient boosting methods, this project analyzed the credit data of over 10,000 individuals to improve the predictability of the model. Notable achievements included elevating the model's AUC score to 0.92, which significantly decreased false positives by 25% and false negatives by 30%. These enhancements led to a more streamlined and efficient loan approval process, substantially reducing potential credit losses for financial institutions. This project exemplifies the application of advanced machine learning techniques to solve real-world problems in the financial sector, demonstrating significant improvements in operational efficiencies and risk management.
+
+- project: AI-Driven Disease Detection through Medical Imaging
+  duration: Feb 2024 – Mar 2024
+  url: "https://github.com/Abhishek17ak/My_Projects/tree/main"
+  description: The AI-Driven Disease Detection through Medical Imaging project utilized cutting-edge machine learning frameworks like TensorFlow and Keras to develop a Convolutional Neural Network (CNN) model. This model was meticulously trained to analyze over 5,000 medical images for the detection of critical health conditions, such as tumors and fractures, achieving a remarkable 95% accuracy rate. The project further demonstrated diagnostic precision with a sensitivity (true positive rate) of 93% and a specificity (true negative rate) of 97%. These metrics underscore the model’s robustness and its potential to revolutionize medical diagnostics by providing healthcare professionals with a powerful tool for rapid and accurate disease diagnosis, thereby enhancing patient care outcomes and facilitating early treatment interventions.
+
+
 - project: University Rankings Analysis
   duration: Oct, 2023 &mdash; Dec, 2023
   url: "https://github.com/Abhishek17ak/My_Projects/tree/main/Unveiling%20the%20Complex%20Tapestry%20of%20University%20Rankings%20A%20Multidimensional%20Comparative%20Analysis%20and%20Modeling%20Approach"
