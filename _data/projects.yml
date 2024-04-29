@@ -18,6 +18,11 @@
   url: "https://github.com/Abhishek17ak/My_Projects/tree/main/Basic-Image-Classification-with-TensorFlow-master"
   description: I recently completed a challenging project on Basic Image Classification using TensorFlow and Keras, focusing on digit recognition from handwritten images. This project involved constructing and training a neural network to identify digits with high accuracy, utilizing the MNIST dataset. Through this endeavor, I deepened my understanding of machine learning workflows, including the implementation of dense layers, activation functions, and optimization algorithms. The successful completion of this project not only enhanced my skills in TensorFlow and Keras but also demonstrated the practical application of neural networks in solving real-world problems. This experience has been instrumental in advancing my expertise in data science and machine learning technologies.
 
+- project: Abalone Age-o-Matic: Predictive Analytics
+  duration: April, 2024
+  url: "https://github.com/Abhishek17ak/My_Projects/tree/main/Abalone%20Age-o-Matic%20Predictive%20Analytics"
+  description: In this project, I developed a machine learning model to predict the age of abalone from physical measurements, significantly streamlining a traditionally labor-intensive and subjective process. Utilizing Python, alongside libraries such as Pandas for data manipulation and Scikit-learn for building and evaluating regression models like Gradient Boosting and Random Forest, I effectively encoded categorical data, standardized features, and engineered polynomial features to enhance model accuracy. This endeavor not only honed my skills in data preprocessing, model selection, and evaluation using metrics like RMSLE but also emphasized the importance of machine learning in automating biological age estimation. The results showcased promising directions for further research and potential real-world applications in marine biology studies.
+
 
 - project: University Rankings Analysis
   duration: Oct, 2023 &mdash; Dec, 2023
