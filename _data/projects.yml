@@ -8,6 +8,11 @@
   url: "https://github.com/Abhishek17ak/My_Projects/tree/main/Fake%20News%20Detection"
   description: This project aimed to tackle the pressing issue of misinformation through the development of a Bidirectional Long Short-Term Memory (LSTM) model, designed to automatically detect fake news with high accuracy. Leveraging the power of advanced natural language processing techniques, the model was trained to understand both the context and the semantics of news articles, enhancing its ability to distinguish between true and false information effectively. The use of bidirectional processing allowed the model to analyze text from both past and future contexts within the data sequence, providing a more comprehensive understanding of the content. Key technologies used included Python, TensorFlow, and Keras, with a focus on optimizing the LSTM architecture for superior performance in real-world scenarios.
 
+- project: "RegressMeNot: Smart Regression & Forests"
+  duration: "Jan 2024 – May 2024"
+  url: "https://github.com/Abhishek17ak/My_Projects/tree/main/RegressMeNot%20Smart%20Regression%20%26%20Forests"
+  description: Developed as part of a coursework project for the MS in Data Science at Stony Brook University, the "RegressMeNot: Smart Regression & Forests" R package offers sophisticated tools for various regression analyses and random forest methods. This comprehensive package facilitates the automation of key parameters like lambda and alpha, and integrates advanced techniques such as bagging to optimize model accuracy and robustness. Featuring logistic, linear, lasso, ridge, and elastic net regression, alongside a robust implementation of random forest, this project includes extensive documentation and vignettes created with R Markdown to support users in applying the functions effectively. It serves as a pivotal educational tool, demonstrating the practical application of statistical learning theories to solve complex real-world data challenges, thus enhancing predictive analytics capabilities significantly.
+
 - project: Advanced Credit Risk Prediction Model
   duration: Jan 2024 – Feb 2024
   url: "https://github.com/Abhishek17ak/My_Projects/tree/main"
