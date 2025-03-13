@@ -1,9 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Abhishek Kalugade Portfolio</title>
+    <title>Abhishek Kalugade | Data Scientist & Machine Learning Engineer</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Abhishek Kalugade - Data Scientist and Machine Learning Engineer specializing in AI, deep learning, and data analytics.">
+    <meta name="keywords" content="data scientist, machine learning, AI, deep learning, portfolio, Abhishek Kalugade">
+    <meta name="author" content="Abhishek Kalugade">
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
     
     <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
 
@@ -21,8 +26,6 @@
     <link rel="stylesheet" href="css/flaticon.css">
     <link rel="stylesheet" href="css/icomoon.css">
     <link rel="stylesheet" href="css/style.css">
-
-
 
 <style>
 
@@ -57,46 +60,36 @@
 }
 
 
-/* Animation styles */
-#typing-animation {
-  position: relative;
-  font-size: 30px;
-  font-weight: bold;
-  color: rgb(255, 255, 255);
-  overflow: hidden;
-  white-space: nowrap;
-  animation: typing 3s steps(20, end) infinite;
+/* Animation styles - replacing the old typing animation */
+#role-animation {
+  font-size: 2rem;
+  font-weight: 500;
+  color: #f9b837;
+  margin-bottom: 30px;
+  min-height: 48px;
+  display: block;
+  text-align: center;
+  opacity: 1;
+  transition: opacity 0.8s ease-in-out;
 }
 
-#typing-animation:before {
-  content: "";
-  /* position: absolute; */
-  top: 0;
-  left: 0;
-  width: 0;
-  height: 100%;
-  background-color: #ccc;
-  animation: typing-cursor 0.5s ease-in-out infinite;
+.fade-in {
+  animation: fadeIn 0.8s ease-in-out forwards;
 }
 
-@keyframes typing {
-  from {
-    width: 0;
-  }
-  to {
-    width: 100%;
-  }
+.fade-out {
+  animation: fadeOut 0.8s ease-in-out forwards;
 }
 
-@keyframes typing-cursor {
-  from {
-    width: 5px;
-  }
-  to {
-    width: 0;
-  }
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
 }
 
+@keyframes fadeOut {
+  from { opacity: 1; transform: translateY(0); }
+  to { opacity: 0; transform: translateY(-10px); }
+}
 
 /* project image zoom effect */
 
@@ -109,6 +102,644 @@
   transform: scale(1.1);
 }
 
+/* Default dark theme styles */
+body {
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+.ftco-navbar-light {
+  background-color: #1e1e1e !important;
+}
+
+.ftco-navbar-light .navbar-brand {
+  color: #ffffff;
+}
+
+.ftco-navbar-light .navbar-nav > .nav-item > .nav-link {
+  color: rgba(255, 255, 255, 0.8) !important;
+}
+
+.ftco-navbar-light .navbar-nav > .nav-item > .nav-link:hover {
+  color: #39dbff !important;
+}
+
+.heading-section h2 {
+  color: #ffffff;
+}
+
+p {
+  color: #cccccc;
+}
+
+.resume-wrap {
+  background: #1e1e1e;
+}
+
+.box {
+  background: #1e1e1e;
+}
+
+/* Back to top button */
+.back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 999;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background: #f9b837;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+  transition: all 0.3s ease;
+}
+
+.back-to-top.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.back-to-top:hover {
+  transform: scale(1.1);
+}
+
+/* Skill tags style */
+.skill-tag {
+  display: inline-block;
+  background-color: transparent;
+  color: #f9b837;
+  padding: 5px 10px;
+  margin: 5px;
+  border-radius: 20px;
+  font-size: 14px;
+  transition: all 0.3s ease;
+  border: 1px solid #f9b837;
+}
+
+.skill-tag:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(249, 184, 55, 0.3);
+  background-color: #f9b837;
+  color: #fff;
+}
+
+/* Skills container layout */
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.skill-category {
+  flex-basis: 100%;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  color: #f9b837;
+  font-weight: 600;
+  border-bottom: 2px solid #f9b837;
+  padding-bottom: 5px;
+  display: inline-block;
+}
+
+/* Project card improvements */
+.blog-entry {
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+}
+
+.blog-entry:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+}
+
+.block-20 {
+  border-radius: 10px 10px 0 0;
+  height: 200px;
+}
+
+/* Project filter buttons */
+.project-filters {
+  margin-bottom: 30px;
+}
+
+.project-filters button {
+  background-color: transparent;
+  color: #f9b837;
+  border: 1px solid #f9b837;
+  border-radius: 20px;
+  padding: 8px 15px;
+  margin: 0 5px;
+  font-size: 14px;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+}
+
+.project-filters button:hover,
+.project-filters button.active {
+  background-color: #f9b837;
+  color: #fff;
+}
+
+.project-filters button.active {
+  box-shadow: 0 0 10px rgba(249, 184, 55, 0.5);
+}
+
+/* Badge colors */
+.badge-primary {
+  background-color: #f9b837;
+}
+
+.badge-info {
+  background-color: #3e3e3e;
+}
+
+/* Projects table styles */
+.projects-table-container {
+  overflow-x: auto;
+  margin-bottom: 40px;
+  background-color: #121212;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.projects-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  background-color: transparent;
+}
+
+.projects-table thead th {
+  padding: 15px 20px;
+  font-weight: 600;
+  color: #999;
+  border-bottom: 2px solid #f9b837;
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+.projects-table tbody tr {
+  transition: all 0.3s ease;
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+}
+
+.projects-table tbody tr:hover {
+  background-color: rgba(249, 184, 55, 0.1);
+}
+
+.projects-table td {
+  padding: 20px;
+  vertical-align: middle;
+  color: #e0e0e0;
+}
+
+.projects-table .project-title {
+  font-weight: 600;
+  font-size: 18px;
+  color: #f9b837;
+  width: 20%;
+}
+
+.projects-table .project-description p {
+  font-size: 14px;
+  color: #ccc;
+  margin-bottom: 0;
+}
+
+.projects-table .made-with {
+  min-width: 200px;
+  width: 25%;
+}
+
+.tech-tag {
+  display: inline-block;
+  background-color: rgba(249, 184, 55, 0.2);
+  color: #f9b837;
+  padding: 3px 8px;
+  margin: 2px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  border: 1px solid #f9b837;
+}
+
+.tech-tag:hover {
+  background-color: #f9b837;
+  color: #fff;
+}
+
+.projects-table .project-link {
+  width: 100px;
+  text-align: center;
+}
+
+.projects-table .btn-outline-primary {
+  color: #f9b837;
+  border-color: #f9b837;
+  transition: all 0.3s ease;
+  border-radius: 20px;
+}
+
+.projects-table .btn-outline-primary:hover {
+  background-color: #f9b837;
+  color: #fff;
+}
+
+@media (max-width: 767px) {
+  .projects-table thead {
+    display: none;
+  }
+  
+  .projects-table tbody tr {
+    display: block;
+    margin-bottom: 20px;
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 8px;
+    padding: 15px;
+  }
+  
+  .projects-table td {
+    display: block;
+    text-align: left;
+    padding: 10px 15px;
+    border: none;
+  }
+  
+  .projects-table .project-title {
+    width: auto;
+    font-size: 18px;
+    color: #f9b837;
+  }
+  
+  .projects-table .project-link {
+    width: auto;
+    text-align: left;
+  }
+}
+
+/* Custom button styles */
+.btn-primary {
+  background-color: #f9b837 !important;
+  border-color: #f9b837 !important;
+  color: #fff;
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active {
+  background-color: #e6a820 !important;
+  border-color: #e6a820 !important;
+}
+
+.btn-white.btn-outline-white {
+  border-color: #fff;
+  color: #fff;
+}
+
+.btn-white.btn-outline-white:hover {
+  background-color: #f9b837;
+  border-color: #f9b837;
+  color: #000;
+}
+
+/* Education section styling */
+#education-section {
+  background-color: #121212;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+#education-section h1.big-4 {
+  color: #f9b837;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  text-align: center;
+  width: 100%;
+}
+
+#education-section .underline {
+  height: 3px;
+  width: 100%;
+  background-color: #f9b837;
+  margin-bottom: 30px;
+}
+
+#education-section .resume-wrap {
+  background: #1e1e1e;
+  padding: 30px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+#education-section .date {
+  font-weight: 700;
+  font-size: 16px;
+  color: #f9b837;
+  display: block;
+  margin-bottom: 10px;
+}
+
+#education-section h2 {
+  font-size: 22px;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+#education-section .position {
+  font-size: 18px;
+  font-weight: 500;
+  color: #ccc;
+  display: block;
+  text-transform: uppercase;
+}
+
+/* Resume section styling updates */
+#resume-section {
+  padding-bottom: 0;
+}
+
+#resume-section h1.big-4 {
+  color: #f9b837;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  text-align: center;
+  width: 100%;
+}
+
+#resume-section .underline {
+  height: 3px;
+  width: 100%;
+  background-color: #f9b837;
+  margin-bottom: 30px;
+}
+
+#resume-section .resume-wrap {
+  background: #1e1e1e;
+  padding: 30px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+#resume-section .date {
+  font-weight: 700;
+  font-size: 16px;
+  color: #f9b837;
+  display: block;
+  margin-bottom: 10px;
+}
+
+#resume-section h2 {
+  font-size: 22px;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+#resume-section .position {
+  font-size: 18px;
+  font-weight: 500;
+  color: #ccc;
+  display: block;
+  text-transform: uppercase;
+}
+
+#resume-section ul li {
+  margin-bottom: 10px;
+  color: #e0e0e0;
+}
+
+/* About section styling */
+#about-section {
+  background-color: #121212;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+#about-section h1.big-4 {
+  color: #f9b837;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  text-align: center;
+  width: 100%;
+}
+
+#about-section .underline {
+  height: 3px;
+  width: 100%;
+  background-color: #f9b837;
+  margin-bottom: 30px;
+}
+
+#about-section p {
+  color: #e0e0e0;
+  font-size: 16px;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+#about-section .about-info {
+  background-color: #1e1e1e;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+#about-section .about-info .d-flex {
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+  padding-bottom: 10px;
+}
+
+#about-section .about-info .d-flex:last-child {
+  border-bottom: none;
+}
+
+#about-section .skill-mf {
+  background-color: #1e1e1e;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+#about-section .counter-wrap {
+  background-color: #1e1e1e;
+  border-radius: 10px;
+  padding: 20px;
+  margin-top: 20px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+#about-section .counter-wrap .number {
+  color: #f9b837;
+  font-size: 36px;
+  font-weight: 700;
+}
+
+#about-section .btn-primary {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 600;
+}
+
+/* Hero section redesign */
+.hero-section {
+  background-color: #121212;
+  padding: 120px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, rgba(249, 184, 55, 0.1) 0%, rgba(0, 0, 0, 0) 100%);
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+.hero-hello {
+  color: #f9b837;
+  font-weight: 600;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+  display: inline-block;
+}
+
+.hero-name {
+  font-size: 4rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.hero-name span {
+  color: #f9b837;
+}
+
+/* Hero section redesign */
+.hero-section {
+  background-color: #121212;
+  padding: 120px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, rgba(249, 184, 55, 0.1) 0%, rgba(0, 0, 0, 0) 100%);
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+.hero-hello {
+  color: #f9b837;
+  font-weight: 600;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+  display: inline-block;
+}
+
+.hero-name {
+  font-size: 4rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.hero-name span {
+  color: #f9b837;
+}
+
+/* Replacing the typing animation with fade animation */
+#role-animation {
+  font-size: 2rem;
+  font-weight: 500;
+  color: #f9b837;
+  margin-bottom: 30px;
+  min-height: 48px;
+  display: block;
+  text-align: center;
+  opacity: 1;
+  transition: opacity 0.8s ease-in-out;
+}
+
+.fade-in {
+  animation: fadeIn 0.8s ease-in-out forwards;
+}
+
+.fade-out {
+  animation: fadeOut 0.8s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeOut {
+  from { opacity: 1; transform: translateY(0); }
+  to { opacity: 0; transform: translateY(-10px); }
+}
+
+.hero-cta {
+  margin-top: 30px;
+}
+
+.hero-cta .btn {
+  padding: 12px 30px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  border-radius: 30px;
+  box-shadow: 0 5px 15px rgba(249, 184, 55, 0.3);
+  transition: all 0.3s ease;
+}
+
+.hero-cta .btn:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(249, 184, 55, 0.4);
+}
+
+.hero-particles {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
 
 </style>
 
@@ -128,190 +759,199 @@
 	        <ul class="navbar-nav nav ml-auto">
 	          <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
 	          <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
-	          <li class="nav-item"><a href="#resume-section" class="nav-link"><span>Resume</span></a></li>
+	          <li class="nav-item"><a href="#resume-section" class="nav-link"><span>Experience</span></a></li>
+	          <li class="nav-item"><a href="#education-section" class="nav-link"><span>Education</span></a></li>
 	          <li class="nav-item"><a href="#project-section" class="nav-link"><span>Projects</span></a></li>
 	          <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
 	        </ul>
 	      </div>
 	    </div>
 	  </nav>
-	  <section id="home-section" class="hero">
-		  <div class="home-slider  owl-carousel">
-	       <div class="slider-item ">
-	      	<div class="overlay"></div>
-	         <div class="container">
-	          <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
-	          	<div class="one-third js-fullheight order-md-last img" style="background-image:url(images/bg_1.png);">
-	          	 <div class="overlay"></div>
-	          	</div>
-		          <div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
-		          	<div class="text">
-		          		<span class="subheading">Hello!</span>
-			            <h1 class="mb-4 mt-3">I'm <span>Abhishek Kalugade</span></h1>
-
-						<!-- Element to contain animated typing -->
-						<span id="typing-animation"></span>
-
-						<script>
-
-						// Initialize the typing animation
-						const typingAnimationElement = document.getElementById('typing-animation');
-
-						// Create an array of typing text
-						const typingTexts = [
-						'Data Scientist  ',
-						'Data Analyst  ',
-						'Machine Learning Engineer   ',
-						'Business Analyst  ',
-						'Sports Analyst  ',
-						'Gen AI Engineer  ',
-						];
-
-						// Create a function to display the typing animation for a given text
-						function playTypingAnimation(text) {
-						// Loop through each character and add it to the element
-						for (let i = 0; i < text.length; i++) {
-							setTimeout(() => {
-							typingAnimationElement.textContent += text[i];
-							}, i * 200); // Increase the delay to slow down the typing animation
-						}
-
-						// Once the animation is complete, reset the text and start over
-						setTimeout(() => {
-							typingAnimationElement.textContent = '';
-							playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
-						}, text.length * 200);
-						}
-
-						// Start the typing animation loop
-						playTypingAnimation(typingTexts[0]);
-
-						</script>
-
-						<br>
-						<br>
-			            <h2>A Data Scientist</h2>
-						<!-- <h2 class="d-flex" style="margin-bottom: 0">With over 5 years of experience</h2> -->
-						<!-- <br> -->
-			            <p><a href="https://github.com/Abhishek17ak" class="btn btn-white btn-outline-white py-3 px-4">My works</a></p>
-		            </div>
-		          </div>
-	        	</div>
-	        </div>
-	      </div>
-		</div>
+	  <section id="home-section" class="hero-section">
+      <div class="container">
+        <div class="row align-items-center justify-content-center">
+          <div class="col-md-10 text-center hero-content">
+            <span class="hero-hello">HELLO!</span>
+            <h1 class="hero-name">I'm <span>Abhishek Kalugade</span></h1>
+            
+            <!-- Replacing the typing animation with fade animation -->
+            <div id="role-animation"></div>
+            
+            <script>
+            // Initialize the role animation
+            const roleElement = document.getElementById('role-animation');
+            
+            // Create an array of roles
+            const roles = [
+              'Machine Learning Engineer',
+              'AI Researcher',
+              'Data Scientist',
+              'Deep Learning Specialist',
+              'NLP Engineer',
+              'GenAI Developer'
+            ];
+            
+            let currentIndex = 0;
+            
+            // Function to animate between roles
+            function animateRoles() {
+              // Fade out current text
+              roleElement.classList.add('fade-out');
+              
+              setTimeout(() => {
+                // Change text and prepare to fade in
+                roleElement.textContent = roles[currentIndex];
+                roleElement.classList.remove('fade-out');
+                roleElement.classList.add('fade-in');
+                
+                // Move to next role
+                currentIndex = (currentIndex + 1) % roles.length;
+                
+                // Remove the fade-in class after animation completes
+                setTimeout(() => {
+                  roleElement.classList.remove('fade-in');
+                }, 800);
+                
+                // Schedule next animation
+                setTimeout(animateRoles, 3000);
+              }, 800);
+            }
+            
+            // Start with the first role
+            roleElement.textContent = roles[0];
+            roleElement.classList.add('fade-in');
+            
+            // Remove initial fade-in class after animation completes
+            setTimeout(() => {
+              roleElement.classList.remove('fade-in');
+              // Start the animation cycle
+              setTimeout(animateRoles, 2200);
+            }, 800);
+            </script>
+            
+            <div class="hero-cta">
+              <a href="https://github.com/Abhishek17ak" class="btn btn-primary py-3 px-5">MY WORKS</a>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
 
 
     <section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
     	<div class="container">
+			<div class="row justify-content-center mb-5">
+				<div class="col-md-10 text-center">
+					<h1 class="big-4">About Me</h1>
+					<div class="underline"></div>
+				</div>
+			</div>
+			
 			<div class="row">
-				<div class="row d-flex align-items-stretch">
-				<!-- <div class="row d-flex"> -->
-					<div class="col-md-6 col-lg-5 d-flex">
-						<div class="img-about img d-flex align-items-stretch">
-							<div class="overlay">
-								<div class="row">
-									
-									<!-- Details next to profile image -->
-									<div class="col-sm-12 col-md-12">
-									  <div class="about-info">
-										<p><span class="title-s">Name: </span> <span>Abhishek Kalugade</span></p>
-										<p><span class="title-s">Job Role: </span> <span>Data Scientist</span></p>
-										<p><span class="title-s">Address: </span> <span>New York, USA</span></p>
-									  </div>
-									</div>
-								  </div>
-
-								  <div class="skill-mf">
-									<p class="title-s">Skills</p>
-									<span>Python Programming</span> <span class="pull-right">95%</span>
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 95%;" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
-									</div>
-									
-									<span>Machine Learning</span> <span class="pull-right">85%</span>
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-									</div>
-									
-									<span>SQL and Database Skills</span> <span class="pull-right">90%</span>
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-									</div>
-									
-									<span>Statistical Analysis</span> <span class="pull-right">85%</span>
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-									</div>
-									
-									<span>Cloud Computing (AWS)</span> <span class="pull-right">80%</span>
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-									</div>
-									
-									<span>Deep Learning (TensorFlow, PyTorch)</span> <span class="pull-right">85%</span>
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-									</div>
-									
-									<span>Data Visualization (Tableau, Power BI)</span> <span class="pull-right">90%</span>
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-									</div>
-									
-									<span>Big Data Analytics (Spark)</span> <span class="pull-right">80%</span>
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-									</div>
-									
-									<span>Version Control (Git)</span> <span class="pull-right">85%</span>
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-									</div>
-									
-									<span>Generative AI</span> <span class="pull-right">80%</span>
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-									</div>
-								</div>
-							</div>
+				<div class="col-md-6">
+					<p>Aspiring Data Scientist with a strong foundation in machine learning, statistical analysis, and cloud computing. 
+					Skilled in developing innovative solutions using cutting-edge technologies. 
+					Adept at storytelling with data and cross-functional collaboration. 
+					Seeking to leverage technical expertise and passion for data-driven decision making in an entry-level data science role.</p>
+					
+					<div class="about-info mt-4">
+						<div class="d-flex mb-3">
+							<span class="title-s" style="min-width: 120px; font-weight: 600; color: #f9b837;">Name:</span>
+							<span>Abhishek Kalugade</span>
+						</div>
+						<div class="d-flex mb-3">
+							<span class="title-s" style="min-width: 120px; font-weight: 600; color: #f9b837;">Job Role:</span>
+							<span>Data Scientist</span>
+						</div>
+						<div class="d-flex mb-3">
+							<span class="title-s" style="min-width: 120px; font-weight: 600; color: #f9b837;">Address:</span>
+							<span>New York, USA</span>
+						</div>
+						<div class="d-flex mb-3">
+							<span class="title-s" style="min-width: 120px; font-weight: 600; color: #f9b837;">Profile:</span>
+							<span>Data Science &amp; Machine Learning</span>
+						</div>
+						<div class="d-flex mb-3">
+							<span class="title-s" style="min-width: 120px; font-weight: 600; color: #f9b837;">Domain:</span>
+							<span>Retail, Financial Services, Healthcare, Sports Analytics, E-Commerce, Media and Entertainment</span>
+						</div>
+						<div class="d-flex mb-3">
+							<span class="title-s" style="min-width: 120px; font-weight: 600; color: #f9b837;">Language:</span>
+							<span>English (Fluent), Hindi (Native), Marathi (Native), Spanish (Beginner)</span>
+						</div>
+						<div class="d-flex mb-3">
+							<span class="title-s" style="min-width: 120px; font-weight: 600; color: #f9b837;">BI Tools:</span>
+							<span>Tableau, Power BI, D3.js</span>
+						</div>
+						<div class="d-flex mb-3">
+							<span class="title-s" style="min-width: 120px; font-weight: 600; color: #f9b837;">Interest:</span>
+							<span>Kaggle competitions, Open-source data science projects</span>
 						</div>
 					</div>
 					
-					<div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
-						<div class="row justify-content-start pb-3">
-							<div class="col-md-12 heading-section ftco-animate">
-								
-								<h1 class="big">About</h1>
-<h2 class="mb-4">About Me</h2>
-
-<p>Aspiring Data Scientist with a strong foundation in machine learning, statistical analysis, and cloud computing. 
-   Skilled in developing innovative solutions using cutting-edge technologies. 
-   Adept at storytelling with data and cross-functional collaboration. 
-   Seeking to leverage technical expertise and passion for data-driven decision making in an entry-level data science role.</p>
-<ul class="about-info mt-4 px-md-0 px-2">
-    <li class="d-flex"><span>Profile:</span> <span>Data Science &amp; Machine Learning</span></li>
-    <li class="d-flex"><span>Domain:</span> <span>Retail, Financial Services, Healthcare, Sports Analytics, E-Commerce, Media and Entertainment</span></li>
-    <li class="d-flex"><span>Education:</span> <span>Master of Science in Data Science (In progress), Bachlor of Technology in Computer Science and Engineering</span></li>
-    <li class="d-flex"><span>Language:</span> <span>English (Fluent), Hindi (Native), Marathi (Native), Spanish (Beginner)</span></li>
-    <li class="d-flex"><span>BI Tools:</span> <span>Tableau, Power BI, D3.js</span></li>
-    <li class="d-flex"><span>Other Skills:</span> <span>Python, SQL, R, AWS, Spark, TensorFlow, PyTorch, Git, Docker, Apache Airflow, Generative AI</span></li>
-    <li class="d-flex"><span>Interest:</span> <span>Kaggle competitions, Open-source data science projects</span></li>
-</ul>
-							</div>
+					<div class="mt-4">
+						<p><a href="https://www.linkedin.com/in/abhishek-kalugade-7185a8199/" class="btn btn-primary py-2 px-3">LINKEDIN</a></p>
+					</div>
+				</div>
+				
+				<div class="col-md-6">
+					<div class="skill-mf">
+						<div class="skills-container">
+							<h5 class="skill-category">Languages</h5>
+							<span class="skill-tag">Python (Pandas, NumPy)</span>
+							<span class="skill-tag">SQL</span>
+							<span class="skill-tag">R</span>
+							<span class="skill-tag">Java</span>
+							<span class="skill-tag">C</span>
+							<span class="skill-tag">C++</span>
+							<span class="skill-tag">Excel</span>
+							
+							<h5 class="skill-category">ML Frameworks</h5>
+							<span class="skill-tag">TensorFlow</span>
+							<span class="skill-tag">PyTorch</span>
+							<span class="skill-tag">Scikit-learn</span>
+							<span class="skill-tag">Hugging Face Transformers</span>
+							
+							<h5 class="skill-category">Gen AI Stack</h5>
+							<span class="skill-tag">LangChain</span>
+							<span class="skill-tag">LlamaIndex</span>
+							<span class="skill-tag">GPT-4</span>
+							<span class="skill-tag">Claude 2</span>
+							<span class="skill-tag">RAG</span>
+							<span class="skill-tag">Vector Databases (Pinecone)</span>
+							
+							<h5 class="skill-category">Cloud</h5>
+							<span class="skill-tag">AWS (SageMaker, Kinesis)</span>
+							<span class="skill-tag">GCP</span>
+							
+							<h5 class="skill-category">Data Engineering</h5>
+							<span class="skill-tag">Spark</span>
+							<span class="skill-tag">Kafka</span>
+							<span class="skill-tag">Airflow</span>
+							<span class="skill-tag">Docker</span>
+							<span class="skill-tag">MLflow</span>
+							<span class="skill-tag">Snowflake</span>
+							
+							<h5 class="skill-category">Visualization</h5>
+							<span class="skill-tag">Tableau</span>
+							<span class="skill-tag">Power BI</span>
+							<span class="skill-tag">Matplotlib</span>
+							<span class="skill-tag">D3.js</span>
+							
+							<h5 class="skill-category">Certifications</h5>
+							<span class="skill-tag">IBM Data Science Professional</span>
+							<span class="skill-tag">Deep Learning Specialization (DeepLearning.AI)</span>
+							<span class="skill-tag">Machine Learning Specialization</span>
 						</div>
-
-
-						<div class="counter-wrap ftco-animate d-flex mt-md-3">
-							<div class="text">
-								<p class="mb-4">
-									<span class="number" data-number="20">0</span> <span>+</span>
-									<span>&nbsp; Projects completed</span>
-								</p>
-								<p><a href="https://www.linkedin.com/in/abhishek-kalugade-7185a8199/" class="btn btn-primary py-3 px-3">LinkedIn</a></p>
-							</div>
+					</div>
+					
+					<div class="counter-wrap d-flex mt-4">
+						<div class="text">
+							<p class="mb-0">
+								<span class="number" data-number="20">0</span><span>+</span>
+								<span>&nbsp;Projects completed</span>
+							</p>
 						</div>
 					</div>
 				</div>
@@ -325,39 +965,29 @@
 	<section class="ftco-section ftco-no-pb" id="resume-section">
 		<div class="container">
 			<div class="row justify-content-center pb-5">
-				<div class="col-md-10 heading-section text-center ftco-animate">
-					<h1 class="big big-2">Resume</h1>
-					<h2 class="mb-4">Resume</h2>
-					<p>Aspiring Data Scientist with a strong foundation in machine learning, statistical analysis, and cloud computing. Skilled in developing innovative solutions using cutting-edge technologies. Adept at storytelling with data and cross-functional collaboration.</p>
+				<div class="col-md-10 text-center">
+					<h1 class="big-4">Experience</h1>
+					<div class="underline"></div>
 				</div>
 			</div>
-	
-			<div class="row">
-				<h1 class="big-4">Experience</h1>
-				<div class="underline"></div>
-			</div>
-			<br>
 			
 			<div class="row">
-				<div class="col-md-4">
+				<div class="col-md-6">
 					<div class="resume-wrap ftco-animate">
 						<span class="date">Nov '24 - Present</span>
 						<h2>Research Assistant</h2>
-						<span class="position">Stony Brook Univeristy</span>
+						<span class="position">Stony Brook University</span>
 						<p class="mt-4">
 							<ul>
-								<li>Developing an advanced terrain classification system by integrating IMU signals and visual data from camera feeds, inspired by
-state-of-the-art research, with applications in robotics.</li>
-								<li>Implementing and optimizing deep learning architectures, including DCNNs and U-Net, to enhance terrain type identification in diverse
-environments.</li>
-								<li>Exploring the integration of generative AI into physics, combining Kolmogorov - Arnold Networks (KAN) and Hamiltonian Neural
-Networks for modeling and problem-solving.</li>
-								
+								<li>Developing an advanced terrain classification system by integrating IMU signals and visual data from camera feeds, inspired by state-of-the-art research, with applications in robotics.</li>
+								<li>Implementing and optimizing deep learning architectures, including DCNNs and U-Net, to enhance terrain type identification in diverse environments.</li>
+								<li>Exploring the integration of generative AI into physics, combining Kolmogorov-Arnold Networks (KAN) and Hamiltonian Neural Networks for modeling and problem-solving.</li>
 							</ul>
 						</p>
 					</div>
 				</div>
-				<div class="col-md-4">
+
+				<div class="col-md-6">
 					<div class="resume-wrap ftco-animate">
 						<span class="date">June - Aug '24</span>
 						<h2>Data Science Intern</h2>
@@ -372,62 +1002,57 @@ Networks for modeling and problem-solving.</li>
 						</p>
 					</div>
 				</div>
-	
-				<div class="col-md-4">
+			</div>
+
+			<div class="row">
+				<div class="col-md-6">
 					<div class="resume-wrap ftco-animate">
 						<span class="date">July '21 - June '23</span>
 						<h2>Data Scientist</h2>
-						<span class="position">Ruggedian Lifestyle Pvt. Ltd.</span>
+						<span class="position">Ruggedian Lifestyle Pvt. Ltd.</span>
 						<p class="mt-4">
 							<ul>
-								<li>Developed predictive models for membership retention and customer segmentation, increasing member retention by 15 Percentage and improving
-marketing conversion rates by 20 Percentage</li>
-								<li>Created interactive dashboards for KPI visualization and optimized gym utilization, leading to a 25 Percentage improvement in resource allocation.</li>
-								<li>Collected and cleaned data from various sources, assisting in the development of statistical models that reduced member churn by 10 Percentage</li>
-								<li>Conducted exploratory data analysis to uncover customer behavior trends and implemented data-driven strategies, improving operational
-efficiency by 12 Percentage</li>
+								<li>Developed predictive models for membership retention and customer segmentation, increasing member retention by 15% and improving marketing conversion rates by 20%.</li>
+								<li>Created interactive dashboards for KPI visualization and optimized gym utilization, leading to a 25% improvement in resource allocation.</li>
+								<li>Collected and cleaned data from various sources, assisting in the development of statistical models that reduced member churn by 10%.</li>
+								<li>Conducted exploratory data analysis to uncover customer behavior trends and implemented data-driven strategies, improving operational efficiency by 12%.</li>
 							</ul>
 						</p>
 					</div>
 				</div>
 			</div>
-	
+		</div>
+	</section>
+
+	<section class="ftco-section ftco-no-pb" id="education-section">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-md-10 text-center">
+					<h1 class="big-4">Education</h1>
+					<div class="underline"></div>
+				</div>
+			</div>
+			<br>
 			
+			<div class="row">
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">2023-2025</span>
+						<h2>Master of Science in Data Science</h2>
+						<span class="position">Stony Brook University</span>
+					</div>
+				</div>
+
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">2019-2023</span>
+						<h2>Bachelor of Technology in Computer Science and Engineering</h2>
+						<span class="position">D.Y. Patil College of Engineering and Technology</span>
+					</div>
+				</div>
 			</div>
 		</div>
 	</section>
-		<br>
-		<br>
-
-		<div class="row">
-			<h1 class="big-4">Education</h1>
-			<div class="underline"></div>
-		</div>
-		<br>
-		
-			<div class="row">
-    			<div class="col-md-6">
-    				<div class="resume-wrap ftco-animate">
-    					<span class="date">2023-2025</span>
-    					<h2>Master of Science in Data Science</h2>
-    					<span class="position">Stony Brook University</span>
-    					
-    				</div>
-    			</div>
-
-    			<div class="col-md-6">
-    				<div class="resume-wrap ftco-animate">
-    					<span class="date">2019-2023</span>
-    					<h2>Bachlor of Technology in Computer Science and Engineering</h2>
-    					<span class="position">D.Y. Patil College of Engineering and Technology</span>
-    					
-    				</div>
-				</div>
-    		</div>
-
-    		
-    	</div>
-    </section>
 
    
 
@@ -440,60 +1065,206 @@ efficiency by 12 Percentage</li>
 					<p>Below are my key projects in Machine Learning, Computer Vision, and Data Science.</p>
 				</div>
 			</div>
-			<div class="row d-flex">
-				<div class="col-md-4 d-flex ftco-animate">
-					<div class="blog-entry justify-content-end">
-						<a href="https://github.com/Abhishek17ak/My_Projects/tree/main/U-Net%20Off-Road%20Terrain%20Segmentation" class="block-20 zoom-effect" style="background-image: url('images/proj_1.jpg');">
-						</a>
-						<div class="text mt-3 float-right d-block">
-							<h3 class="heading"><a href="https://github.com/Abhishek17ak/My_Projects/tree/main/U-Net%20Off-Road%20Terrain%20Segmentation">U-Net Off-Road Terrain Segmentation</a></h3>
-							<p>Developed U-Net model for terrain segmentation, achieving 98.7% accuracy on 9,000+ images.</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4 d-flex ftco-animate">
-					<div class="blog-entry justify-content-end">
-						<a href="https://github.com/Abhishek17ak/My_Projects/tree/main/IoT%20Anomaly%20Sleuth" class="block-20 zoom-effect" style="background-image: url('images/proj_2.jpg');">
-						</a>
-						<div class="text mt-3 float-right d-block">
-							<h3 class="heading"><a href="https://github.com/Abhishek17ak/My_Projects/tree/main/IoT%20Anomaly%20Sleuth">IoT Anomaly Sleuth</a></h3>
-							<p>Built real-time anomaly detection system for IoT data, achieving 96% accuracy.</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4 d-flex ftco-animate">
-					<div class="blog-entry">
-						<a href="https://github.com/Abhishek17ak/My_Projects/tree/main/ShareBite%20-%20Food%20Donation%20App" class="block-20 zoom-effect" style="background-image: url('images/proj_3.jpg');">
-						</a>
-						<div class="text mt-3 float-right d-block">
-							<h3 class="heading"><a href="https://github.com/Abhishek17ak/My_Projects/tree/main/ShareBite%20-%20Food%20Donation%20App">ShareBite - Food Donation App</a></h3>
-							<p>Android app connecting food donors with recipients, using Google Maps API and Firebase backend.</p>
-						</div>
+			
+			<!-- Project Filters -->
+			<div class="row mb-5">
+				<div class="col-md-12 text-center">
+					<div class="project-filters">
+						<button class="btn active" data-filter="all">ALL</button>
+						<button class="btn" data-filter="machine-learning">MACHINE LEARNING</button>
+						<button class="btn" data-filter="computer-vision">COMPUTER VISION</button>
+						<button class="btn" data-filter="app-development">APP DEVELOPMENT</button>
+						<button class="btn" data-filter="data-analysis">DATA ANALYSIS</button>
+						<button class="btn" data-filter="nlp">NLP</button>
+						<button class="btn" data-filter="gen-ai">GENERATIVE AI</button>
 					</div>
 				</div>
 			</div>
-			<br>
-			<div class="row d-flex justify-content-center">  
-				<div class="col-md-4 d-flex ftco-animate">
-					<div class="blog-entry justify-content-end">
-						<a href="https://github.com/Abhishek17ak/My_Projects/tree/main/Advanced%20Credit%20Risk%20Prediction%20Model" class="block-20 zoom-effect" style="background-image: url('images/proj_4.jpg');">
-						</a>
-						<div class="text mt-3 float-right d-block">
-							<h3 class="heading"><a href="https://github.com/Abhishek17ak/My_Projects/tree/main/Advanced%20Credit%20Risk%20Prediction%20Model">Advanced Credit Risk Prediction Model</a></h3>
-							<p>Machine learning model for credit risk assessment, achieving 0.92 AUC score and reducing false predictions.</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4 d-flex ftco-animate">
-					<div class="blog-entry justify-content-end">
-						<a href="https://github.com/Abhishek17ak/My_Projects/tree/main/Driver%20Safex%20-%20Driver%20Drowsiness%20Detection%20System" class="block-20 zoom-effect" style="background-image: url('images/proj_5.jpg');">
-						</a>
-						<div class="text mt-3 float-right d-block">
-							<h3 class="heading"><a href="https://github.com/Abhishek17ak/My_Projects/tree/main/Driver%20Safex%20-%20Driver%20Drowsiness%20Detection%20System">Driver Safex - Drowsiness Detection System</a></h3>
-							<p>Developed ML model for Android app to detect driver drowsiness and alert emergency contacts.</p>
-						</div>
-					</div>
-				</div>
+			
+			<!-- Projects Table -->
+			<div class="projects-table-container">
+				<table class="table projects-table">
+					<thead>
+						<tr>
+							<th>PROJECT NAME</th>
+							<th>DESCRIPTION</th>
+							<th>MADE WITH</th>
+							<th>LINK</th>
+						</tr>
+					</thead>
+					<tbody>
+						<!-- Project 1 -->
+						<tr class="project-item" data-category="computer-vision">
+							<td class="project-title">U-Net Off-Road Terrain Segmentation</td>
+							<td class="project-description">
+								<p>Developed U-Net model for terrain segmentation, achieving 98.7% accuracy on 9,000+ images.</p>
+							</td>
+							<td class="made-with">
+								<span class="tech-tag">PyTorch</span>
+								<span class="tech-tag">Computer Vision</span>
+								<span class="tech-tag">Deep Learning</span>
+							</td>
+							<td class="project-link">
+								<a href="https://github.com/Abhishek17ak/My_Projects/tree/main/U-Net%20Off-Road%20Terrain%20Segmentation" class="btn btn-outline-primary" target="_blank">
+									<i class="icon-github"></i> GITHUB
+								</a>
+							</td>
+						</tr>
+						
+						<!-- Project 2 -->
+						<tr class="project-item" data-category="machine-learning">
+							<td class="project-title">IoT Anomaly Sleuth</td>
+							<td class="project-description">
+								<p>Built real-time anomaly detection system for IoT data, achieving 96% accuracy.</p>
+							</td>
+							<td class="made-with">
+								<span class="tech-tag">Python</span>
+								<span class="tech-tag">Machine Learning</span>
+								<span class="tech-tag">IoT</span>
+							</td>
+							<td class="project-link">
+								<a href="https://github.com/Abhishek17ak/My_Projects/tree/main/IoT%20Anomaly%20Sleuth" class="btn btn-outline-primary" target="_blank">
+									<i class="icon-github"></i> GITHUB
+								</a>
+							</td>
+						</tr>
+						
+						<!-- Project 3 -->
+						<tr class="project-item" data-category="app-development">
+							<td class="project-title">ShareBite - Food Donation App</td>
+							<td class="project-description">
+								<p>Android app connecting food donors with recipients, using Google Maps API and Firebase backend.</p>
+							</td>
+							<td class="made-with">
+								<span class="tech-tag">Android</span>
+								<span class="tech-tag">Firebase</span>
+								<span class="tech-tag">Google Maps API</span>
+							</td>
+							<td class="project-link">
+								<a href="https://github.com/Abhishek17ak/My_Projects/tree/main/ShareBite%20-%20Food%20Donation%20App" class="btn btn-outline-primary" target="_blank">
+									<i class="icon-github"></i> GITHUB
+								</a>
+							</td>
+						</tr>
+						
+						<!-- Project 4 -->
+						<tr class="project-item" data-category="data-analysis">
+							<td class="project-title">Advanced Credit Risk Prediction Model</td>
+							<td class="project-description">
+								<p>Machine learning model for credit risk assessment, achieving 0.92 AUC score and reducing false predictions.</p>
+							</td>
+							<td class="made-with">
+								<span class="tech-tag">Python</span>
+								<span class="tech-tag">Scikit-learn</span>
+								<span class="tech-tag">Finance</span>
+							</td>
+							<td class="project-link">
+								<a href="https://github.com/Abhishek17ak/My_Projects/tree/main/Advanced%20Credit%20Risk%20Prediction%20Model" class="btn btn-outline-primary" target="_blank">
+									<i class="icon-github"></i> GITHUB
+								</a>
+							</td>
+						</tr>
+						
+						<!-- Project 5 -->
+						<tr class="project-item" data-category="computer-vision">
+							<td class="project-title">Driver Safex - Drowsiness Detection System</td>
+							<td class="project-description">
+								<p>Developed ML model for Android app to detect driver drowsiness and alert emergency contacts.</p>
+							</td>
+							<td class="made-with">
+								<span class="tech-tag">OpenCV</span>
+								<span class="tech-tag">TensorFlow</span>
+								<span class="tech-tag">Android</span>
+							</td>
+							<td class="project-link">
+								<a href="https://github.com/Abhishek17ak/My_Projects/tree/main/Driver%20Safex%20-%20Driver%20Drowsiness%20Detection%20System" class="btn btn-outline-primary" target="_blank">
+									<i class="icon-github"></i> GITHUB
+								</a>
+							</td>
+						</tr>
+						
+						<!-- Project 6 (New) -->
+						<tr class="project-item" data-category="computer-vision">
+							<td class="project-title">Basic Image Classification with TensorFlow</td>
+							<td class="project-description">
+								<p>A neural network model that predicts digits from hand-written images with high accuracy, implementing fundamental concepts of TensorFlow and Keras.</p>
+							</td>
+							<td class="made-with">
+								<span class="tech-tag">Python</span>
+								<span class="tech-tag">TensorFlow</span>
+								<span class="tech-tag">Keras</span>
+								<span class="tech-tag">Neural Networks</span>
+								<span class="tech-tag">Image Classification</span>
+							</td>
+							<td class="project-link">
+								<a href="https://github.com/Abhishek17ak/My_Projects/tree/main/Basic-Image-Classification-with-TensorFlow-master" class="btn btn-outline-primary" target="_blank">
+									<i class="icon-github"></i> GITHUB
+								</a>
+							</td>
+						</tr>
+						
+						<!-- Project 7 (New) -->
+						<tr class="project-item" data-category="gen-ai">
+							<td class="project-title">CoverAI - Cover Letter Generator</td>
+							<td class="project-description">
+								<p>A Streamlit-based application that generates personalized cover letters by analyzing resumes and job descriptions using the Llama 2 language model.</p>
+							</td>
+							<td class="made-with">
+								<span class="tech-tag">Python</span>
+								<span class="tech-tag">Streamlit</span>
+								<span class="tech-tag">Replicate API</span>
+								<span class="tech-tag">NLP</span>
+								<span class="tech-tag">AI Integration</span>
+							</td>
+							<td class="project-link">
+								<a href="https://github.com/Abhishek17ak/My_Projects/tree/main/CoverAI" class="btn btn-outline-primary" target="_blank">
+									<i class="icon-github"></i> GITHUB
+								</a>
+							</td>
+						</tr>
+						
+						<!-- Project 8 (New) -->
+						<tr class="project-item" data-category="nlp">
+							<td class="project-title">Finsum AI-Powered Financial Report Summarizer</td>
+							<td class="project-description">
+								<p>A comprehensive system that extracts and summarizes key information from financial reports using advanced natural language processing techniques.</p>
+							</td>
+							<td class="made-with">
+								<span class="tech-tag">Python</span>
+								<span class="tech-tag">Flask</span>
+								<span class="tech-tag">Streamlit</span>
+								<span class="tech-tag">NLP</span>
+								<span class="tech-tag">API Development</span>
+								<span class="tech-tag">Docker</span>
+							</td>
+							<td class="project-link">
+								<a href="https://github.com/Abhishek17ak/My_Projects/tree/main/FinSum%20AI-Powered%20Financial%20Report%20Summarizer/financial-summarizer" class="btn btn-outline-primary" target="_blank">
+									<i class="icon-github"></i> GITHUB
+								</a>
+							</td>
+						</tr>
+						
+						<!-- Project 9 (New) -->
+						<tr class="project-item" data-category="nlp">
+							<td class="project-title">Resume Screening Assistant</td>
+							<td class="project-description">
+								<p>An NLP-powered application that automates resume screening by matching candidate profiles with job descriptions, categorizing resumes, and identifying skill gaps.</p>
+							</td>
+							<td class="made-with">
+								<span class="tech-tag">Python</span>
+								<span class="tech-tag">NLP</span>
+								<span class="tech-tag">Machine Learning</span>
+								<span class="tech-tag">Text Classification</span>
+								<span class="tech-tag">TF-IDF Vectorization</span>
+							</td>
+							<td class="project-link">
+								<a href="https://github.com/Abhishek17ak/My_Projects/tree/main/ResuMate" class="btn btn-outline-primary" target="_blank">
+									<i class="icon-github"></i> GITHUB
+								</a>
+							</td>
+						</tr>
+					</tbody>
+				</table>
 			</div>
 		</div>
 	</section>
@@ -539,7 +1310,7 @@ efficiency by 12 Percentage</li>
 			<!-- <div class="container"> -->
 				<div class="row justify-content-center">
 					<div class="col-md-7 ftco-animate text-center">
-						<h2>More projects on<span> Github  </span> </h2>
+						<h2>More projects on<span style="color: #f9b837;"> Github  </span> </h2>
 						<div class="heading"> <h4> I love to solve business problems &amp; uncover hidden data stories </h4>
 						<br>
 						<p><a href="https://github.com/Abhishek17ak" class="btn btn-primary py-3 px-5">GitHub</a></p>
@@ -612,6 +1383,49 @@ efficiency by 12 Percentage</li>
 			<br>
 		  </div>
 		</div>
+
+		<!-- Contact Form -->
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-md-8">
+					<div class="contact-form-wrapper p-5 mb-5" style="border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
+						<h3 class="mb-4 text-center">Send Me a Message</h3>
+						<form id="contactForm" class="contact-form" action="https://formsubmit.co/abhishek.kalugade17@gmail.com" method="POST">
+							<div class="row">
+								<div class="col-md-6">
+									<div class="form-group">
+										<input type="text" class="form-control" name="name" placeholder="Your Name" required>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="form-group">
+										<input type="email" class="form-control" name="email" placeholder="Your Email" required>
+									</div>
+								</div>
+								<div class="col-md-12">
+									<div class="form-group">
+										<input type="text" class="form-control" name="_subject" placeholder="Subject" required>
+									</div>
+								</div>
+								<div class="col-md-12">
+									<div class="form-group">
+										<textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+									</div>
+								</div>
+								<div class="col-md-12">
+									<div class="form-group text-center">
+										<button type="submit" class="btn btn-primary py-3 px-5">Send Message</button>
+									</div>
+								</div>
+							</div>
+							<!-- FormSubmit configuration -->
+							<input type="hidden" name="_next" value="https://abhishek17ak.github.io/Resume/index.html">
+							<input type="hidden" name="_captcha" value="false">
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
 	  </section>
  
 	
@@ -619,18 +1433,19 @@ efficiency by 12 Percentage</li>
 		<div class="container">
 		  <div class="row">
 			<div class="col-md-12 text-center">
-  
-			  <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-	Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart color-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-	<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+			  <p>Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | Abhishek Kalugade</p>
 			</div>
 		  </div>
 		</div>
 	  </footer>
 
+  <!-- Back to Top Button -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to Top">
+    <i class="icon-arrow-up"></i>
+  </button>
 
   <!-- loader -->
-  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-miterlimit="10" stroke="#f9b837"/></svg></div>
 
 
   <script src="js/jquery.min.js"></script>
@@ -647,6 +1462,7 @@ efficiency by 12 Percentage</li>
   <script src="js/scrollax.min.js"></script>
   
   <script src="js/main.js"></script>
+  <script src="js/custom.js"></script>
     
   </body>
 </html>
